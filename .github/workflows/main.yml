@@ -4,10 +4,10 @@ name: Binaries
 on: # Workflow triggers on both when a commit is pushed, or when a pull request is made.
     push:
         branches: 
-            - dev
+            - main
     pull_request:
         branches:
-            - dev
+            - main
     
     workflow_dispatch: # Run workflow manually from the actions tab.
     workflow_call: #For release builds
