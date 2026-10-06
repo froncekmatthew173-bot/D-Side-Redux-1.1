@@ -54,6 +54,7 @@ jobs: # FUCK MY LIFE BROOOOO
                 Run haxelib setup C:/haxelib
                 Run haxelib install hxpkg --quiet
                 Run haxelib run hxpkg install
+                Run haxelib install json2object
                 if (Test-Path .haxelib/lime) {
                   Remove-Item -Recurse -Force -LiteralPath .haxelib/lime
                 }
@@ -113,6 +114,7 @@ jobs: # FUCK MY LIFE BROOOOO
                 haxelib setup ~/haxelib
                 haxelib install hxpkg --quiet
                 haxelib run hxpkg install
+                haxelib install json2object
                 rm -rf .haxelib/lime
                 git clone https://github.com/FunkinCrew/lime .haxelib/lime/git
                 git -C .haxelib/lime/git checkout ${{ env.LIME_HASH }}
@@ -187,6 +189,7 @@ jobs: # FUCK MY LIFE BROOOOO
                 haxelib setup ~/haxelib
                 haxelib install hxpkg --quiet
                 haxelib run hxpkg install
+                haxelib install json2object
                 rm -rf .haxelib/lime
                 git clone https://github.com/FunkinCrew/lime .haxelib/lime/git
                 git -C .haxelib/lime/git checkout ${{ env.LIME_HASH }}
